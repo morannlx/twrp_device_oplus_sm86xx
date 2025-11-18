@@ -12,7 +12,15 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 ## Device identifier
 PRODUCT_DEVICE  := sm86xx
 PRODUCT_NAME    := twrp_sm86xx
-PRODUCT_BRAND   := oplus
+PRODUCT_BRAND := realme
+PRODUCT_SYSTEM_DEVICE := RE5C4FL1
+PRODUCT_MODEL := RMX3800
+PRODUCT_MANUFACTURER := realme
+
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := RMX3800,RE5C4FL1
+
 
 # Theme
 TW_STATUS_ICONS_ALIGN   := center
