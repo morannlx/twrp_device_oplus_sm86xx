@@ -1,6 +1,6 @@
 service variant-script /system/bin/variant-script.sh
     user root
     group root
-    disabled
     oneshot
+    disabled
     seclabel u:r:recovery:s0
