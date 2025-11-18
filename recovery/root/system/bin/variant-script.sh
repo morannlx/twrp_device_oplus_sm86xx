@@ -80,6 +80,10 @@ case "$variant" in
         # OnePlus ACE 3 PRO (corvette)
         set_oneplus_common "Oneplus ACE 3 Pro" "PJX110" "OP5D06L1" "CN" "0"
         ;;
+    "23631")
+        # Realme GT 6 (divo)
+        set_oneplus_common "Oneplus ACE 3 Pro" "PJX110" "OP5D06L1" "CN" "0"
+        ;;
 
     *)
         # Unknown variant
@@ -99,7 +103,6 @@ case "$device" in
         # OnePlus NORD 4 (audi)
         cp -rf /vendor/variant/audi/vendor/* /vendor
         ;;
-
     *)
         # No need to copy files device
         device="$(cat /config/usb_gadget/g1/strings/0x409/product)"
